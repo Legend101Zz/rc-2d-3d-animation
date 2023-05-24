@@ -6,16 +6,6 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- partial:index.partial.html -->
-    <script>
-      THREE.ShapeUtils.triangulateShape = (function () {
-        var pnlTriangulator = new PNLTRI.Triangulator();
-        return function triangulateShape(contour, holes) {
-          return pnlTriangulator.triangulate_polygon([contour].concat(holes));
-        };
-      })();
-    </script>
-
     <div id="three-container">
       <button type="button" id="3d">GOO</button>
     </div>
